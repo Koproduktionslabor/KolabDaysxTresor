@@ -2,7 +2,7 @@
 <img width="853,3" height="533,3" alt="Screenshot 2025-07-12 155911" src="https://github.com/user-attachments/assets/60898389-0d1d-4ab7-bddd-47b7d0d8e359" />
 
 
-documentation writen based in personal learning and Strudel official documentation
+documentation writen by [@flordefuego](https://github.com/flordefuego) based in personal learning and [Strudel official documentation](https://strudel.cc/workshop/getting-started/)
 
 ## Table of contents:
 
@@ -13,6 +13,7 @@ documentation writen based in personal learning and Strudel official documentati
 - [Generate automate scales](#generate-automate-scales)
 - [How to use sliders](#how-to-use-sliders)
 - [Visualisation](#visualisation)
+- [Effects](#effects)
 - [Mask function](#mask-function)
 - [Set bpm](#set-bpm)
 - [Load external samples](#load-external-samples)
@@ -148,6 +149,8 @@ Replicate using !
 
 
 # Visualisation
+
+# Effects
 
 # Mask function
 
