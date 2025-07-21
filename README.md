@@ -16,7 +16,7 @@ documentation writen based in personal learning and Strudel official documentati
 - [mask function](#mask-function)
 - [set bpm](#set-bpm)
 - [load external samples](#load-external-samples)
-- [load Hydra](#load-hydra)
+- [bonus: load Hydra](#bonus-load-hydra)
 
 *** 
 
