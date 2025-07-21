@@ -8,14 +8,15 @@ documentation writen based in personal learning and Strudel official documentati
 
 - [load samples](#load-samples)
 - [bank function](#bank-function)
-- create sequences
-- play notes
-- generate scales
-- how to use sliders
-- visualisation
-- mask function
-- set bpm
-- load external samples
+- [create sequences](#create-sequences)
+- [play notes](#play-notes)
+- [Generate automate scales](#generate-automate-scales)
+- [how to use sliders](#how-to-use-sliders)
+- [visualisation](#visualisation)
+- [mask function](#mask-function)
+- [set bpm](#set-bpm)
+- [load external samples](#load-external-samples)
+- [load Hydra](#load-hydra)
 
 *** 
 
@@ -58,7 +59,7 @@ $:s("metal casio numbers:1 space")
 - rd = ride cymbal
 - cr = crash cymbal
 
-### bank function
+## Bank function
 
 It is also possible to access to a folder that contains this samples and use them with the ``.bank()`` function like this:
 
@@ -73,7 +74,7 @@ As you already can see from the previous examples, the more samples you accumula
 
 ``$:s("bd hh sd")`` meanwhile this will sound more like 3/4
 
-When you combine different lines of code/tracks with different timing you can get [polyrhitmic patterns](https://en.wikipedia.org/wiki/Polyrhythm).
+When you combine different lines of code/tracks with different timing you can get [polyrhytmic patterns](https://en.wikipedia.org/wiki/Polyrhythm).
 
 Another interesting possibility is to interate samples, for example having one time in a cycle "bd" and the next one "hh":
 
@@ -141,3 +142,17 @@ Replicate using !
 
 ``$:n("0!2 [4 3 5 7]").scale("<C:mixolydian>").sound("piano")``
 
+***
+
+# How to use sliders
+
+
+# Visualisation
+
+# Mask function
+
+# Set bpm
+
+# Load external samples
+
+# Bonus: Load Hydra
