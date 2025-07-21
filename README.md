@@ -121,7 +121,7 @@ Make patterns with sub-sequences
 
 ``$: note("[[c#4 gb2]*2 [eb4 gb2]*2 [a#3 bb3]*2]").sound("gm_electric_guitar_muted")``
 
-### automate scales
+### generate automate scales
 
 ``$:n("<1 0> 2 5 <[3,8] [7,9]>").scale("C:minor").sound("piano")``
 
