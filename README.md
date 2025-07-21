@@ -6,17 +6,17 @@ documentation writen based in personal learning and Strudel official documentati
 
 ## Table of contents:
 
-- [load samples](#load-samples)
-- [bank function](#bank-function)
-- [create sequences](#create-sequences)
-- [play notes](#play-notes)
+- [Load samples](#load-samples)
+- [Lank function](#bank-function)
+- [Create sequences](#create-sequences)
+- [Play notes](#play-notes)
 - [Generate automate scales](#generate-automate-scales)
-- [how to use sliders](#how-to-use-sliders)
-- [visualisation](#visualisation)
-- [mask function](#mask-function)
-- [set bpm](#set-bpm)
-- [load external samples](#load-external-samples)
-- [bonus: load Hydra](#bonus-load-hydra)
+- [How to use sliders](#how-to-use-sliders)
+- [Visualisation](#visualisation)
+- [Mask function](#mask-function)
+- [Set bpm](#set-bpm)
+- [Load external samples](#load-external-samples)
+- [Bonus: load Hydra](#bonus-load-hydra)
 
 *** 
 
@@ -122,7 +122,7 @@ Make patterns with sub-sequences
 
 ``$: note("[[c#4 gb2]*2 [eb4 gb2]*2 [a#3 bb3]*2]").sound("gm_electric_guitar_muted")``
 
-### generate automate scales
+# Generate automate scales
 
 ``$:n("<1 0> 2 5 <[3,8] [7,9]>").scale("C:minor").sound("piano")``
 
