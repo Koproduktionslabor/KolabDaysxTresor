@@ -6,8 +6,8 @@ documentation writen based in personal learning and Strudel official documentati
 
 ## Table of contents:
 
-- load samples
-- bank function
+- [load samples](#load-samples)
+- [bank function](#bank-function)
 - create sequences
 - play notes
 - generate scales
