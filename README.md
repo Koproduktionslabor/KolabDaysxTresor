@@ -205,6 +205,8 @@ Generate UI sliders to control your music code
 
 # Visualisation
 
+https://strudel.cc/learn/visual-feedback/#punchcard--pianoroll
+
 # Mask function
 
 # Set bpm
