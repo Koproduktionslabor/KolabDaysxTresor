@@ -11,6 +11,7 @@ documentation writen by [@flordefuego](https://github.com/flordefuego) based in 
 - [Create sequences](#create-sequences)
 - [Play notes](#play-notes)
 - [Generate automate scales](#generate-automate-scales)
+- [Combine samples and notes](#combine-samples-and-notes)
 - [How to use sliders](#how-to-use-sliders)
 - [Visualisation](#visualisation)
 - [Effects](#effects)
@@ -131,7 +132,7 @@ Make patterns with sub-sequences
 
 [list of scales](https://pulse.berklee.edu/scales/index.html)
 
-Elongate with @
+## Elongate with @
 
 ``$: note("c@3 eb").sound("gm_acoustic_bass")``
 
@@ -139,18 +140,70 @@ Elongate with @
 
 ``$:n("[0@2 0] [4 3@2 5@2 7]").scale("<A:minor:pentatonic>").sound("piano")``
 
-Replicate using !
+## Replicate using !
 
 ``$:n("0!2 [4 3 5 7]").scale("<C:mixolydian>").sound("piano")``
 
+## Arpegios
+
+## Chords
+
+Using chord symbols but the voicings will be automatically generated with smooth voice leading, minimizing jumps. It is inspired by the way a piano or guitar player would pick chords to accompany a song. (From Strudel documentation) 
+
+``$:chord(`<Cm D7 Ab Cm>`).voicing().sound("piano")``
+
+### Arpeggios
+
+``$:n("0 3 1 2").chord("<Cm D7 Ab Cm>").voicing().sound("piano")``
+
+# Combine samples and notes
+``$:s(`[bd]*3, ~ hh, [ch rim]*2`).bank("RolandTR909")``
+
+``$: note("E2 D2 C2 A2").sound("triangle").gain(0.5)``
+
+``$: note("[<A2 A4> A3 D3 G3 E3 <C4 C5>]").sometimes(x=>x.fast(2)).room(0.3).gain(0.7)``
+
+[more info about chords and voicing here](https://strudel.cc/understand/voicings/#what-is-a-chord)
+
 ***
+# Effects
+
+<img width="720" height="611" alt="image" src="https://github.com/user-attachments/assets/c3b8a11a-3936-48c7-b9df-ca7514bd822d" />
+
+
+There are plenty of effects in Strudel, and this depends on what style you want to achieve/generate.
+
+Here there are some ideas, but the combinations and possibilities are wide...
+
+Reverb
+
+room sets levels of reverb
+
+``$:s("bd hh").room("<0.5 0 1 0.2>")``
+
+delay
+
+``$:s("bd hh").delay("<0 0.5 1 2>")``
+
+crush (bit crusher effect)
+
+``$:s("bd hh").crush("<1 0.5 16 8>")``
+
+degradeBy -removes randomly events from the patterns, making in this way sound more 'organic' or imperfect
+
+``$:s("hh*8").degradeBy(0.2)``
+
+speed -changes the speed of the sample and the pitch
+
+``$:s("rim*8").speed("1 0.5 2 0.3 -1 -0.1 -3")`` 
 
 # How to use sliders
 
+Generate UI sliders to control your music code
+
+``$:s("bd*4").lpf(slider(100,100,5000))``
 
 # Visualisation
-
-# Effects
 
 # Mask function
 
