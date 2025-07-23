@@ -205,13 +205,46 @@ Generate UI sliders to control your music code
 
 ``$:s("bd*4").lpf(slider(100,100,5000))``
 
+Slider party
+
+``all(x=>x.lpf(slider(2770.5,100,5000).room(0.1)))``
+
+``$:s("[~ bd]*4").bank("RolandTR909").room(0.2)`` 
+
+``$:s(`[<hh hh*2 cp> ~]*<2 4>`).bank("rolandtr808").gain(slider(0,0,0.5))``
+
+``$:n("[0@2 3 5 1 4 3@2 5@2 7]*2").scale("<A2:minor>").s('triangle').delay(0.1).gain(slider(0.5,0,0.5))``
+
+``$:n("[0 3 5 1 4 3 5 7]").scale("<A3:minor>").s('triangle').delay(0.5).gain(slider(0,0,0.5))``
+
 # Visualisation
 
+there are different ways of visualisation and one can use this for each line or for the whole code
+
+``$:n("[0@2 3 5 1 4 3@2 5@2 7]*2").scale("<A2:minor>").s('triangle').delay(0.1).gain(slider(0.5,0,0.5))._pitchwheel()``
+
+or
+
+``all(x=>x.lpf(slider(2770.5,100,5000).room(0.1).color("cyan").punchcard({vertical: 1})))``
+
+``$:s("[~ bd]*4").bank("RolandTR909").room(0.2) ``
+
+``$:s(`[<hh hh*2 cp> ~]*<2 4>`).bank("rolandtr808").gain(slider(0,0,0.5))``
 
 
 # Mask function
 
+Mask it's useful for making silence intervals
+
+``$:n("[0 3 5 1 4 3 5 7]").scale("<A3:minor>").s('triangle').delay(0.5).mask("<1@2 0@1>")``
+
+``$:n("[0 3 5 1 4 3 5 7]*2").scale("<A5:minor>").s('triangle').delay(0.5).mask("<0 1>") ``
+
 # Set bpm
+
+Strudel uses CPM (cycles per minute)
+
+
 
 # Load external samples
 
