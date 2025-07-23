@@ -199,13 +199,15 @@ speed -changes the speed of the sample and the pitch
 
 # How to use sliders
 
+slider(val,max,min)
+
 Generate UI sliders to control your music code
 
 ``$:s("bd*4").lpf(slider(100,100,5000))``
 
 # Visualisation
 
-https://strudel.cc/learn/visual-feedback/#punchcard--pianoroll
+
 
 # Mask function
 
