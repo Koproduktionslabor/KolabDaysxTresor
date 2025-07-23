@@ -244,8 +244,36 @@ Mask it's useful for making silence intervals
 
 Strudel uses CPM (cycles per minute)
 
+``setcpm(120)``
+
+When you devide per 4, you would get something like 120 pmb in 4 cycles which would be 4/4.
+
+``setcpm(120/4)``
+
+``$:s("bd*4")``
+
+``$:s("rim*3")``  (this would sound like 3/4)
+
 
 
 # Load external samples
 
+[load external samples](https://strudel.cc/learn/samples/#loading-custom-samples)
+
 # Bonus: Load Hydra
+
+``await initHydra()``
+
+``let pattern = sine.range(10,100).slow(8)``
+
+``voronoi().blend(voronoi(H(pattern),10).thresh(0.5)).out(o0)``
+
+``
+$:n("[0 3 5 1 4 3 5 7]").scale("<A3:minor>").s('triangle').delay(0.5).mask("<1@2 0@1>")
+``
+
+``$:n("[0 3 5 1 4 3 5 7]*2").scale("<A5:minor>").s('triangle').delay(0.5).mask("<0 1>")``
+
+``$:s("[~ bd]*4").bank("RolandTR909").room(0.2)``
+
+``$:s(`[<hh hh*2 cp> ~]*<2 4>`).bank("rolandtr808").gain(slider(0,0,0.5))``
