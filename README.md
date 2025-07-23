@@ -144,8 +144,6 @@ Make patterns with sub-sequences
 
 ``$:n("0!2 [4 3 5 7]").scale("<C:mixolydian>").sound("piano")``
 
-## Arpegios
-
 ## Chords
 
 Using chord symbols but the voicings will be automatically generated with smooth voice leading, minimizing jumps. It is inspired by the way a piano or guitar player would pick chords to accompany a song. (From Strudel documentation) 
