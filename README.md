@@ -7,7 +7,7 @@ documentation writen by [@flordefuego](https://github.com/flordefuego) based in 
 ## Table of contents:
 
 - [Load samples](#load-samples)
-- [Lank function](#bank-function)
+- [Bank function](#bank-function)
 - [Create sequences](#create-sequences)
 - [Play notes](#play-notes)
 - [Generate automate scales](#generate-automate-scales)
